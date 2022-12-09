@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+h1
+{
+  position: absolute;
+  text-align: center;
+  font-size: 90px;
+  font-weight: bolder;
+ color: #fff;
+}
+h1 span 
+{
+  background: linear-gradient(to right, red, blue, purple, yellow, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background: #222;
+}
+.container
+{
+  position: relative;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  padding: 20px;
+  margin-top: 125px;
+}
+.container .card
+{
+  width: 100%;
+  background: #000;
+}
+.container .card .imgBx
+{
+  position: relative;
+  width: 100%;
+  height: 310px;
+  overflow: hidden;
+}
+.container .card .imgBx img 
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+.container .card:hover .imgBx img
+{
+  transform: scale(1.5);
+}
+.container .card .content
+{
+  padding: 10px;
+}
+.container .card .content .productName h3
+{
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  margin: 5px 0;
+}
+.container .card .content .price_rating 
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .card .content .price_rating h2
+{
+  font-size: 20px;
+  color: #ff2020;
+  font-weight: 500;
+}
+.container .card .content .price_rating .fa 
+{
+  color: #ffd513;
+  cursor: pointer;
+}
+.container .card .content .price_rating .fa.grey
+{
+  color: #ccc;
+}
+.button-discord {
+  float: right;
+           position: absolute;
+           padding: 10px;
+            margin: 40px;
+            top: 22px;
+           right: 55px;
+          cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  background-color: #2c2f33;
+  color: white;
+  transition: all 0.3s ease
+  font-weight: Bolder;
+}
+.button-discord:hover {
+  transform: rotate(360deg);
+  transform: scale(1.01);
+}
+img 
+{
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 36px;
+  left: 96px;
+  border: solid 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+img:hover
+{
+  transform: rotate(360deg);
+  transform: scale(1.13);
+}
+.buyBTN
+{
+  background-color: grey;
+  border-radius: 3px;
+  border: none;
+  background-color: #2c2f33;
+  transition: all 0.3s ease;
+  font-weight: Bolder;
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+  font-size: 19px;
+  font-weight: Bolder;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+}
+.buyBTN:hover 
+{
+  transform: rotate(360deg);
+  transform: scale(1.01);
+  background-color: blue;
+}
+.btn{
+  border: 1px solid grey;
+  background: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  right: 6px;
+}
+.btn1,.btn2{
+  color: grey;
+}
+.btn3,.btn4{
+  color: #fff;
+}
+.btn1:hover,.btn2:hover{
+  color: #fff;
+}
+.btn3:hover,.btn4:hover{
+  color: #222;
+}
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #222;
+  z-index: -1;
+  transition: 0.8s;
+}
+.btn1::before,.btn3::before{
+  top: 0;
+  border-radius: 0 0 50% 50%;
+}
+.btn2::before,.btn4::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+.btn3::before,.btn4::before{
+  height: 180%;
+}
+.btn1:hover::before,.btn2:hover::before{
+  height: 180%;
+}
+.btn3:hover::before,.btn4:hover::before{
+  height: 0%;
+}
+.button-aboutus
+{
+   float: right;
+           position: absolute;
+           padding: 10px;
+            margin: 40px;
+            top: 22px;
+           right: 176px;
+          cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  background-color: #2c2f33;
+  color: white;
+  transition: all 0.3s ease
+  font-weight: Bolder;
+}
+.button-aboutus:hover
+{
+  transform: rotate(360deg);
+  transform: scale(1.01);
+}
